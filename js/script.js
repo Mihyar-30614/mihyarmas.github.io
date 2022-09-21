@@ -6,7 +6,7 @@
     });
 
     $('#home').on('click', () => {
-        $("#single-page-container").load("https://Mihyar-30614.github.io/mihyarmas.github.io/pages/home.html", () => {
+        $("#single-page-container").load("../pages/home.html", () => {
             $("#yearsOfExp").text(new Date().getFullYear() - 2017);
             $('#pageList').find("li .active").toggleClass("active");
             $('#pageList').find("li #home").toggleClass("active");
@@ -15,7 +15,7 @@
     });
 
     $('#about').on('click', () => {
-        $("#single-page-container").load("https://Mihyar-30614.github.io/mihyarmas.github.io/pages/about.html", () => {
+        $("#single-page-container").load("../pages/about.html", () => {
             $('#pageList').find("li .active").toggleClass("active");
             $('#pageList').find("li #about").toggleClass("active");
             $('.offcanvas-collapse').removeClass('open');
@@ -23,7 +23,7 @@
     });
 
     $('#resume').on('click', () => {
-        $("#single-page-container").load("https://Mihyar-30614.github.io/mihyarmas.github.io/pages/resume.html", () => {
+        $("#single-page-container").load("../pages/resume.html", () => {
             $('#pageList').find("li .active").toggleClass("active");
             $('#pageList').find("li #resume").toggleClass("active");
             $('.offcanvas-collapse').removeClass('open');
