@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+:root {
+    --back: #161B33;
+    --icon-size: 24px;
+    --font-color: #43aa8b;
+}
+
+html,
+body {
+    /* Prevent scroll on narrow devices */
+    overflow-x: hidden;
+    padding-top: 60px;
+    background-color: var(--back);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: var(--font-color);
+}
+
+h3 {
+    font-size: clamp(40px, 8vw, 80px);
+}
+
+i {
+    font-size: var(--icon-size);
+}
+
+@media (max-width: 991.98px) {
+    .offcanvas-collapse {
+        position: fixed;
+        top: 57px;
+        bottom: 0;
+        left: 100%;
+        width: 50%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: var(--back);
+        transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+    }
+    .offcanvas-collapse.open {
+        visibility: visible;
+        transform: translateX(-100%);
+    }
+    .social-media {
+        position: fixed;
+        bottom: 2%;
+    }
+    #email-menu {
+        position: fixed;
+        bottom: 6%;
+    }
+}
+
+.social-media .nav-link {
+    display: inline;
+    padding-right: 5px;
+}
+
+.navbar-nav .nav-link,
+.nav-link:hover,
+.nav-link,
+.navbar-toggler {
+    color: var(--font-color);
+}
+
+.navbar-nav .nav-link.active {
+    color: white;
+}
+
+.list-group-item {
+    background-color: var(--back);
+    color: var(--font-color);
+    border-color: var(--font-color);
+}
+
+.headers {
+    color: white;
+    font-size: clamp(20px, 4vw, 40px);
+    padding-top: 1rem;
+}
+
+.prime {
+    font-size: clamp(40px, 8vw, 80px);
+}
+
+.spaced-3 {
+    letter-spacing: 3px;
+}
+
+.spaced-2 {
+    letter-spacing: 2px;
+}
+
+#personal {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 20px;
+}
+
+.btn.stretched-link,
+#navbar {
+    background-color: var(--back);
+    color: var(--font-color);
+}
