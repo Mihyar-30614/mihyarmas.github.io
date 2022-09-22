@@ -34,7 +34,7 @@
 
     console.info(`
     👍Welcome! you have made it to the secret terminal shhh!!🤐. \n
-    Here are some of you options📃:%c
+    Here are some of your options📃:%c
     1) Mihyar.github() :---------- will take you to my github profile.
     2) Mihyar.linkedin() :-------- will take you to my linkedin profile.
     3) Mihyar.twitter() :--------- will take you to my twitter profile.
