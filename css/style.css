@@ -103,3 +103,8 @@ i {
     background-color: var(--back);
     color: var(--font-color);
 }
+
+#email-menu a {
+    text-decoration: none;
+    color: var(--font-color)
+}
