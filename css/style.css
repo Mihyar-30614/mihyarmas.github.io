@@ -13,6 +13,9 @@ body {
     background-color: var(--back);
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+}
+
+.green-font {
     color: var(--font-color);
 }
 
@@ -107,4 +110,46 @@ i {
 #email-menu a {
     text-decoration: none;
     color: var(--font-color)
+}
+
+.resume-skills {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.resume-skills p {
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+}
+
+.resume-container li {
+    float: left;
+    padding: 16px;
+    display: block;
+}
+
+.resume-container {
+    background-color: azure;
+}
+
+.resume-container i {
+    font-size: 50px;
+}
+
+.resume-skill {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
+.skill-desc {
+    display: block;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
 }
