@@ -95,16 +95,15 @@ i {
     letter-spacing: 2px;
 }
 
-#personal {
-    max-width: 300px;
-    max-height: 300px;
-    border-radius: 20px;
-}
-
 .btn.stretched-link,
 #navbar {
     background-color: var(--back);
     color: var(--font-color);
+}
+
+.btn.stretched-link:hover {
+    border-color: var(--back);
+    border-width: 2px;
 }
 
 #email-menu a {
