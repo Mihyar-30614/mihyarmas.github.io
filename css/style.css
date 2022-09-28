@@ -25,6 +25,7 @@ h3 {
 
 i {
     font-size: var(--icon-size);
+    border-radius: 5px;
 }
 
 @media (max-width: 991.98px) {
@@ -131,7 +132,9 @@ i {
 }
 
 .resume-container {
-    background-color: azure;
+    background-color: rgba(32, 80, 96, 0.2);
+    border-radius: 5px;
+    color: #E2E3E5;
 }
 
 .resume-container i {
@@ -151,5 +154,6 @@ i {
 .icon {
     height: 50px;
     width: 50px;
-    vertical-align: unset;
+    vertical-align: text-bottom;
+    border-radius: 5px;
 }
