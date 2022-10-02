@@ -63,3 +63,7 @@ const Mihyar = {
         window.open(url, '_blank').focus();
     }
 }
+
+function getInTouch() {
+    $("#mailto")[0].click();
+}

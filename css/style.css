@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 :root {
-    --back: #161B33;
+    --background: #161B33;
     --icon-size: 24px;
     --font-color: #43aa8b;
+    --white: #E2E3E5
 }
 
 html,
@@ -10,7 +11,7 @@ body {
     /* Prevent scroll on narrow devices */
     overflow-x: hidden;
     padding-top: 60px;
-    background-color: var(--back);
+    background-color: var(--background);
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
@@ -26,6 +27,7 @@ h3 {
 i {
     font-size: var(--icon-size);
     border-radius: 5px;
+    vertical-align: text-bottom;
 }
 
 @media (max-width: 991.98px) {
@@ -39,7 +41,7 @@ i {
         padding-left: 1rem;
         overflow-y: auto;
         visibility: hidden;
-        background-color: var(--back);
+        background-color: var(--background);
         transition: transform .3s ease-in-out, visibility .3s ease-in-out;
     }
     .offcanvas-collapse.open {
@@ -69,17 +71,17 @@ i {
 }
 
 .navbar-nav .nav-link.active {
-    color: white;
+    color: var(--white);
 }
 
 .list-group-item {
-    background-color: var(--back);
+    background-color: var(--background);
     color: var(--font-color);
     border-color: var(--font-color);
 }
 
 .headers {
-    color: white;
+    color: var(--white);
     font-size: clamp(20px, 4vw, 40px);
     padding-top: 1rem;
 }
@@ -98,12 +100,12 @@ i {
 
 .btn.stretched-link,
 #navbar {
-    background-color: var(--back);
+    background-color: var(--background);
     color: var(--font-color);
 }
 
 .btn.stretched-link:hover {
-    border-color: var(--back);
+    border-color: var(--background);
     border-width: 2px;
 }
 
@@ -134,7 +136,7 @@ i {
 .resume-container {
     background-color: rgba(32, 80, 96, 0.2);
     border-radius: 5px;
-    color: #E2E3E5;
+    color: var(--white);
 }
 
 .resume-container i {
@@ -156,4 +158,32 @@ i {
     width: 50px;
     vertical-align: text-bottom;
     border-radius: 5px;
+}
+
+#btn-cta {
+    background: transparent;
+    height: 60px;
+    width: 300px;
+    border-radius: 10px;
+    border: 3px solid var(--white);
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 800;
+    font-size: 20px;
+    box-shadow: 0 0 0 var(--white);
+    transition: ease-in .5s;
+}
+
+#btn-cta span {
+    color: var(--font-color);
+    transition: ease-in-out .5s;
+}
+
+#btn-cta:hover {
+    box-shadow: 0 0 20px var(--white), inset 300px 0 var(--white)
+}
+
+#btn-cta:hover span {
+    color: var(--font-color);
 }
