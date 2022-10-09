@@ -2,18 +2,22 @@
 :root {
     --primary-color: #161B33;
     --secondary-color: #93959c;
+    --info-color: #161B33;
     --background: #E2E3E5;
     --icon-size: 24px;
     --white: #43aa8b;
+    --resume-bg: rgba(32, 80, 96, 0.1);
 }
 
 [data-theme="dark"] {
     /* :root { */
     --primary-color: #43aa8b;
     --secondary-color: #E2E3E5;
+    --info-color: #E2E3E5;
     --background: #161B33;
     --icon-size: 24px;
     --white: #E2E3E5;
+    --resume-bg: rgba(32, 80, 96, 0.2);
 }
 
 html,
@@ -31,7 +35,7 @@ body {
 }
 
 h3 {
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(20px, 4vw, 40px);
 }
 
 i {
@@ -66,9 +70,6 @@ i {
         position: fixed;
         bottom: 6%;
     }
-    #theme-toggler {
-        display: none;
-    }
 }
 
 .social-media .nav-link {
@@ -101,10 +102,11 @@ i {
     color: var(--white);
     font-size: clamp(20px, 4vw, 40px);
     padding-top: 1rem;
+    text-transform: uppercase;
 }
 
 .prime {
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(30px, 6vw, 60px);
 }
 
 .spaced-3 {
@@ -128,7 +130,9 @@ i {
 
 #email-menu a {
     text-decoration: none;
-    color: var(--primary-color)
+    color: var(--primary-color);
+    font-size: x-large;
+    text-transform: capitalize;
 }
 
 .resume-skills {
@@ -139,19 +143,20 @@ i {
 }
 
 .resume-skills p {
-    font-style: italic;
     padding: 0;
     margin: 0;
+    color: var(--info-color)
 }
 
 .resume-container li {
     float: left;
     padding: 16px;
     display: block;
+    color: var(--info-color);
 }
 
 .resume-container {
-    background-color: rgba(32, 80, 96, 0.2);
+    background-color: var(--resume-bg);
     border-radius: 5px;
     color: var(--secondary-color);
 }
@@ -419,7 +424,7 @@ i {
     background-color: #ccc;
     bottom: 0;
     cursor: pointer;
-    left: 0;
+    left: 5px;
     position: absolute;
     right: 0;
     top: 0;

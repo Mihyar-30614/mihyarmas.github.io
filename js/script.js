@@ -37,7 +37,6 @@
         } else {
             document.documentElement.setAttribute('data-theme', 'light');
             localStorage.setItem('theme', 'light'); //add this
-            $(".navbar-toggler-icon").toggleClass("no-background-image");
         }
     });
 
